@@ -1,6 +1,6 @@
-# Pozzolan Reactivity Prediction
+# Mineralogical properties and reactivity of natural pozzolans: A machine learning perspective
 
-Bayesian Ridge and Random Forest regression models with Leave-One-Out Cross-Validation (LOOCV) for predicting natural pozzolan reactivity indicators.
+Bayesian Ridge and Random Forest regression models with Leave-One-Out Cross-Validation (LOOCV) were used to predict the reactivity of 33 natural pozzolans (NPs).
 
 ## Project Structure
 
@@ -55,7 +55,7 @@ FEATURE_COLUMNS = [
 
 ## Models
 
-- **BayesianRidge + Softplus link**: Ensures strictly positive predictions by fitting in transformed space via `inverse_softplus(y)` and mapping back with `softplus(pred)`.
+- **BayesianRidge + Softplus link**: Ensures positive predictions by fitting in transformed space via `inverse_softplus(y)` and mapping back with `softplus(pred)`.
 - **RandomForest**: Baseline comparison with configurable `n_estimators` and `max_depth`.
 
 Both models are evaluated using LOOCV with R², RMSE, and MAE metrics.
