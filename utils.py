@@ -23,3 +23,12 @@ def inverse_softplus(y):
     Clipping prevents log(0).
     """
     return np.log(np.expm1(np.clip(y, 1e-7, 500)))
+
+
+def sigmoid(x):
+    """Sigmoid function: 1/(1+exp(-x)).
+
+    Derivative of softplus; used in the delta method to propagate
+    uncertainty from transformed space back to the original scale.
+    """
+    return 1.0 / (1.0 + np.exp(-np.clip(x, -500, 500)))

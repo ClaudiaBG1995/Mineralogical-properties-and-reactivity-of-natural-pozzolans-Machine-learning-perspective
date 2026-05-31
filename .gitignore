@@ -21,3 +21,6 @@ Thumbs.db
 # Environment
 .env
 venv/
+
+# Working drafts
+code_v2/

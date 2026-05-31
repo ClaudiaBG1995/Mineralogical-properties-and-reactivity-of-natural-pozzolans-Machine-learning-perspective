@@ -54,6 +54,12 @@ TARGET_COLUMN = 'Heat release 7d'
 ID_COLUMN = 'ID'
 
 # ---------------------------------------------------------------------------
+# Grouped samples (same parent material, different D50 by grinding)
+# PZ30-PZ33 are derived from PZ20 with identical reactive composition.
+# ---------------------------------------------------------------------------
+GROUPED_IDS = ['PZ20', 'PZ30', 'PZ31', 'PZ32', 'PZ33']
+
+# ---------------------------------------------------------------------------
 # Global parameters
 # ---------------------------------------------------------------------------
 RANDOM_STATE = 42
